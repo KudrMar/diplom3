@@ -2,8 +2,7 @@
   font-family: OpenSans;
   src: url("../fonts/OpenSans-Regular.woff");
   font-weight: 400;
-  font-style: normal;
-}
+  font-style: normal;3
 
 @font-face {
   font-family: OpenSans;
@@ -257,7 +256,6 @@ main {
   color: #b59f5b;
   font-size: 14px;
   font-weight: bold;
-  overflow: scroll;
 }
 
 .tag-item-article:nth-child(n + 1) {
@@ -280,10 +278,6 @@ main {
 
 .tag-item-article:hover {
   text-decoration: underline;
-}
-
-.title-trend-card {
-   overflow: scroll;
 }
 
 .head-item-article {
@@ -885,6 +879,14 @@ main {
 
 .title-trend-card-link{
  font-size: 17px;
+}
+
+.tag-article-list {
+  overflow: scroll;
+}
+
+.title-trend-card {
+   overflow: scroll;
 }
 
 aside {
