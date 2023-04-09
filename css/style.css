@@ -257,11 +257,12 @@ main {
   color: #b59f5b;
   font-size: 14px;
   font-weight: bold;
+  overflow: scroll;
 }
 
 .tag-item-article:nth-child(n + 1) {
   /*margin: 0 5.4% 0 0;*/
-  margin: 0 38px 0 0;
+  margin: 0 20px 0 0;
 }
 
 .tag-item-article a {
@@ -279,6 +280,10 @@ main {
 
 .tag-item-article:hover {
   text-decoration: underline;
+}
+
+.title-trend-card {
+   overflow: scroll;
 }
 
 .head-item-article {
