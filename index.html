@@ -7,13 +7,46 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<section class="container-popup2 _hidden">
+		<section class="container-popup">
+			<button class="popup_close" type="button"></button>
+			<h2 class="head-wide">
+				<a class="head-wide-link" href="#">Ваш ФИДБЕк</a>
+			</h2>
+			<h3 class="popup-select-head">Как часто вы заходите на сайт?</h3>
+			<select class="select">
+				<option value="value1" selected>Почти каждый день</option>
+				<option value="value2">Варианты: Каждый день...</option>
+			</select>
+			<h3 class="popup-select-head">Вы подписаны на e-mail рассылку?</h3>
+			<div class="radio-content-popup">
+				<label class="radio-group-popup">
+					<input type="radio" class="radio-popup">
+					<span class="radio-text-popup">Да</span>
+
+				</label>
+				<label class="radio-group-popup">
+					<input type="radio" class="radio-popup">
+					<span class="radio-text-popup">Нет</span>
+
+				</label>
+			</div>
+			<h3 class="popup-select-head">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</h3>
+			<textarea class="textarea-popup" placeholder="Может, больше рецептов?"></textarea>
+			<div class="form-group form-actions">
+				<button class="button-submit-subscribe" type="submit">Отправить</button>
+			</div>
+
+		</section>
+	</section>
+
 	<header>
 		<div class="container-top">
 			<div class="top">
 				<a href="#" class="logo-link">
 					<img src="svg/noemi-logo.svg" alt="moemi" class="logo"> 
 				</a>
-				<nav>
+				<nav class="nav-top">
 					<ul class="menu-list" id="menu-list-top">
 						<li class="menu-item"><a href="#" class="menu-link">Главная</a></li>
 						<li class="menu-item"><a href="#" class="menu-link">Посты</a></li>
@@ -22,6 +55,9 @@
 						<li class="menu-item"><a href="#" class="menu-link">Темы</a></li>
 						<li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
 					</ul>
+					<div class="burger">
+						
+					</div>
 				</nav>
 			</div>
 			<h1 class="title">Блог о творчестве, спорте, и образе жизни</h1>
@@ -391,7 +427,23 @@
 			<article class="shop-card">
 				<div class="image-shop">
 					<a href="" class="image-shop-link">
-						<img src="images/shop-item-desk1.jpg" alt="лот" class="image-shop-logo">
+						<picture>
+							<source
+							media="(min-width: 1200px)"
+							srcset="images/shop-item-desk1.jpg">
+							<source
+							media="(min-width: 641px) and (max-width: 1199px)"
+							srcset="images/shop-item-tablet1.jpg">
+							<source
+							media="(max-width: 640px)"
+							srcset="images/shop-item-mobile1.jpg">
+							<img
+							src="images/shop-item-desk1.jpg"
+							class="image-shop-logo"
+							alt="лот">
+						</picture>
+
+						<!-- <img src="images/shop-item-desk1.jpg" alt="лот" class="image-shop-logo"> -->
 					</a>
 				</div>
 				<div class="content-shop-card">
@@ -400,7 +452,7 @@
 					</h3>
 					<div class="excerpt-shop">
 						<p>Набор из двух подушек с модными принтами. Видео о создании <a href="" class="excerpt-shop-link"> здесь</a>
-					    </p>
+						</p>
 					</div>
 					<div class="bottom-shop-block">
 						<div class="price-shop-block">
@@ -411,11 +463,26 @@
 					</div>
 				</div>
 			</article>
-		
+
 			<article class="shop-card">
 				<div class="image-shop">
 					<a href="" class="image-shop-link">
-						<img src="images/shop-item-desk2.jpg" alt="лот" class="image-shop-logo">
+						<picture>
+							<source
+							media="(min-width: 1200px)"
+							srcset="images/shop-item-desk2.jpg">
+							<source
+							media="(min-width: 641px) and (max-width: 1199px)"
+							srcset="images/shop-item-tablet2.jpg">
+							<source
+							media="(max-width: 640px)"
+							srcset="images/shop-item-mobile2.jpg">
+							<img
+							src="images/shop-item-desk2.jpg"
+							class="image-shop-logo"
+							alt="лот">
+						</picture>
+						<!-- <img src="images/shop-item-desk2.jpg" alt="лот" class="image-shop-logo"> -->
 					</a>
 				</div>
 				<div class="content-shop-card">
@@ -424,7 +491,7 @@
 					</h3>
 					<div class="excerpt-shop">
 						<p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящна <a href="" class="excerpt-shop-link"> весенняя серия постов</a> в блоге и несколько подкастов
-					    </p>
+						</p>
 					</div>
 					<div class="bottom-shop-block">
 						<div class="price-shop-block">
@@ -439,7 +506,22 @@
 			<article class="shop-card">
 				<div class="image-shop">
 					<a href="" class="image-shop-link">
-						<img src="images/shop-item-desk3.jpg" alt="лот" class="image-shop-logo">
+						<picture>
+							<source
+							media="(min-width: 1200px)"
+							srcset="images/shop-item-desk3.jpg">
+							<source
+							media="(min-width: 641px) and (max-width: 1199px)"
+							srcset="images/shop-item-tablet3.jpg">
+							<source
+							media="(max-width: 640px)"
+							srcset="images/shop-item-mobile3.jpg">
+							<img
+							src="images/shop-item-desk3.jpg"
+							class="image-shop-logo"
+							alt="лот">
+						</picture>
+						<!-- <img src="images/shop-item-desk3.jpg" alt="лот" class="image-shop-logo"> -->
 					</a>
 				</div>
 				<div class="content-shop-card">
@@ -448,7 +530,7 @@
 					</h3>
 					<div class="excerpt-shop">
 						<p>Необычная рамка для украшения дома из видео <a href="" class="excerpt-shop-link"> «Как сделать рамку из подручных средств за 30 минут"</a>
-					    </p>
+						</p>
 					</div>
 					<div class="bottom-shop-block">
 						<div class="price-shop-block">
@@ -459,7 +541,7 @@
 					</div>
 				</div>
 			</article>
-		 </div>
+		</div>
 	</section>
 
 	<footer class="container-footer">
@@ -489,37 +571,5 @@
 			</a>
 		</div>
 	</footer>
-	<section class="container-popup2 _hidden">
-		<section class="container-popup">
-			<button class="popup_close" type="button"></button>
-			<h2 class="head-wide">
-				<a class="head-wide-link" href="#">Ваш ФИДБЕк</a>
-			</h2>
-			<h3 class="popup-select-head">Как часто вы заходите на сайт?</h3>
-			<select class="select">
-				<option value="value1" selected>Почти каждый день</option>
-				<option value="value2">Варианты: Каждый день...</option>
-			</select>
-			<h3 class="popup-select-head">Вы подписаны на e-mail рассылку?</h3>
-			<div class="radio-content-popup">
-				<label class="radio-group-popup">
-					<input type="radio" class="radio-popup">
-					<span class="radio-text-popup">Да</span>
-
-				</label>
-				<label class="radio-group-popup">
-					<input type="radio" class="radio-popup">
-					<span class="radio-text-popup">Нет</span>
-
-				</label>
-			</div>
-			<h3 class="popup-select-head">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</h3>
-			<textarea class="textarea-popup" placeholder="Может, больше рецептов?"></textarea>
-			<div class="form-group form-actions">
-				<button class="button-submit-subscribe" type="submit">Отправить</button>
-			</div>
-
-		</section>
-	</section>
 </body>
 </html>
