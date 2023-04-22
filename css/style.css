@@ -887,8 +887,8 @@ body {
   width: 18px;
   height: 18px;
   display: block;
-  align-items: flex-end;
-  justify-content: flex-end;
+  /*align-items: flex-end;
+  justify-content: flex-end;*/
   background-color: transparent;
   border: none;
 }
